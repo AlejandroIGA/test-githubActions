@@ -1,7 +1,7 @@
-const index = require('./testindex');
+const hashFunction = require('./testindex');
 
-test('Filter even numbers', () => {
-    const message = "contraseña";
-    const filteredNumbers = index(message);
-    expect(filteredNumbers).toEqual("559a0612917c8c516c7980c38b376cf2bb2387ae1b6944b3b32245ff4f2bad4d5db3811f02cff394fb62fa3feefd03e2eb83ba7bcca72a912bb87ea609c424da");
-});
+test('Verificar hash', () => {
+    const msg = "hola";
+    const hash = hashFunction(msg);
+    expect(hash).toEqual("e83e8535d6f689493e5819bd60aa3e5fdcba940e6d111ab6fb5c34f24f86496bf3726e2bf4ec59d6d2f5a2aeb1e4f103283e7d64e4f49c03b4c4725cb361e773");
+})
