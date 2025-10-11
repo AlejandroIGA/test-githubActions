@@ -1,4 +1,4 @@
-const hashFunction = require('./testindex');
+const hashFunction = require('./testindex.mjs');
 
 test('Verificar hash', () => {
     const msg = "hola";
